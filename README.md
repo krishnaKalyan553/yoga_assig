@@ -1,18 +1,18 @@
 
 # Registration Website for Yoga classes
 
-Welcome to the Yoga Website project (Mindful Bliss)! This project is aimed at creating a form for a yoga studio that includes a payment gateway integration, and a thank-you page.
+Welcome to the Yoga Website project (Mindful Bliss)! This project aims to create a form for a yoga studio that includes a payment gateway integration, and a thank-you page.
 
 
 ## Demo
 
 https://mindfulbliss.netlify.app/
 
-Try out the appliaction here 😎
+Try out the application here 😎
 
-#### Deployed using netlify 
+#### Deployed using Netlify 
 
-Note: Please be patient as our server responds. Your journey to a healthier, more balanced life awaits! 🌿
+Just so you know, please be patient as our server responds. Your journey to a healthier, more balanced life awaits! 🌿
 
 
 ## Features
@@ -24,13 +24,13 @@ Note: Please be patient as our server responds. Your journey to a healthier, mor
 
 ## Tech Stack
 
-**Client:** React, Html, Css
+**Client:** React, Html, CSS
 
 **Server:** Node, Express
 
 
 ## API Reference
-Try out the working backend api by using postman.
+Try out the working backend API by using Postman.
 
 https://mindfullbliss.onrender.com/
 
@@ -38,11 +38,15 @@ https://mindfullbliss.onrender.com/
 
 #### /api/submitForm
 
-Takes form data as a dictinary and validates the data.
+Takes form data as a dictionary and validates the data.
 
 #### /api/Thankyou
 
 Validates the payment.
+
+responds with a status code of 200 in case of correct execution result
+
+responds with a status code of 400 in case of an error in the validation
 
 
 ## Assumptions
@@ -51,7 +55,7 @@ Validates the payment.
 This function is assumed to check the provided email against the actual email. 
 
 ### maximum_no_people :
-This function is assumed to check if the maximum number of people in a batch got reached or not. 
+This function is assumed to check if the maximum number of people in a batch was reached or not. 
 
 ### CompletePayment :
-This function assumed to complete the payment made through the form.
+This function is assumed to complete the payment made through the form.
