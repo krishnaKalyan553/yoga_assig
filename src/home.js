@@ -31,6 +31,7 @@ function Home(){
         }
       } catch (error) {
         console.error('Error submitting form:', error);
+        navigate("/error");
       }
       
   };
