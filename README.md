@@ -32,7 +32,7 @@ Just so you know, please be patient as our server responds. Your journey to a he
 ## API Reference 📚
 Try out the working backend API by using Postman.
 
-https://mindfullbliss.onrender.com/
+https://mindfull-bliss.onrender.com
 
 #### deployed using Render
 
