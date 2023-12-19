@@ -1,0 +1,83 @@
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.yoga-class-form {
+  font-family: 'Arial', sans-serif;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for form fields */
+.field {
+  margin-bottom: 15px;
+}
+
+/* Style for labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for input and select fields */
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Style for the submit button */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+button:hover {
+  background-color: #45a049;
+}
+.err{
+  color: red;
+}
+
+/* Additional styling for the form */
+.yoga-class-form h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.yoga-class-form p {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .yoga-class-form {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
