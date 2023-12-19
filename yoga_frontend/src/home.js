@@ -40,7 +40,6 @@ function Home(){
     setFormData({ ...formData, [e.target.name]: e.target.value });
     // console.log(formData)
   };
-  // const handleSubmit = ()=>{console.log("submitted form to backend")};
   return (
   <div className="yoga-class-form">
   <h1>Register Now for Yoga Classes!</h1>
