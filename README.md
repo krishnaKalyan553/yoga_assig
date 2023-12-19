@@ -1,5 +1,5 @@
 
-# Yoga Website Project
+# Registration Website Project for Yoga classes
 
 Welcome to the Yoga Website project (Mindful Bliss)! This project is aimed at creating a form for a yoga studio that includes a payment gateway integration, and a thank-you page.
 
