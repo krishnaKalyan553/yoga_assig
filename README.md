@@ -44,3 +44,14 @@ Takes form data as a dictinary and validates the data.
 
 Validates the payment.
 
+
+### Assumptions
+
+## search_db : 
+This function is assumed to check the provided email against the actual email. 
+
+## maximum_no_people :
+This function is assumed to check if the maximum number of people in a batch got reached or not. 
+
+## CompletePayment :
+This function assumed to complete the payment made through the form.
