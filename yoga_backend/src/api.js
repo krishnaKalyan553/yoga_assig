@@ -29,9 +29,13 @@ app.get('/',(req,res)=>{res.json({"its working":"yeah"}) })
 
 app.post('/api/submitForm', (req, res) => {
   const formData = req.body;
-  console.log(formData)
+  console.log(formData.name+" data reached");
   function search_db(email){
     // searching for the presence of email in the database.
+    return false
+  }
+  function maximum_no_people(batch){
+    // searches for number of people in a batch
     return false
   }
   function validate(data){
@@ -51,6 +55,9 @@ app.post('/api/submitForm', (req, res) => {
     else if(data.batch != "6-7AM" && data.batch != "7-8AM" && data.batch != "8-9AM" && data.batch != "5-6PM"){
       isValid = false
       console.log("batch")
+    }
+    else if(maximum_no_people(data.batch)==true){
+      res.status(400).json({ success: false,message:'Unexpected Error'});
     }
     return isValid
   }
