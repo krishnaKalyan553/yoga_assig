@@ -14,7 +14,7 @@ function Home(){
   const handleSubmit = async (e) => {
     e.preventDefault();
       try {
-        let response = await fetch('https://mindfullbliss.onrender.com/api/submitForm', {
+        let response = await fetch('https://mindfull-bliss.onrender.com/api/submitForm', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

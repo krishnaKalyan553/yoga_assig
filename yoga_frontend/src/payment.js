@@ -17,7 +17,7 @@ const Payment = () => {
   const handleSubmit = async (e)=> {
     e.preventDefault();
     try {
-      let response = await fetch('https://mindfullbliss.onrender.com/api/makepayment', {
+      let response = await fetch('https://mindfull-bliss.onrender.com/api/makepayment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
