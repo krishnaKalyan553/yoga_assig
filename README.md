@@ -1,70 +1,61 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Registration Website for Yoga classes
 
-## Available Scripts
+Welcome to the Yoga Website project (Mindful Bliss)! This project aims to create a form for a yoga studio that includes a payment gateway integration, and a thank-you page.
 
-In the project directory, you can run:
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://mindfulbliss.netlify.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Try out the application here 😎
 
-### `npm test`
+#### Deployed using Netlify 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Just so you know, please be patient as our server responds. Your journey to a healthier, more balanced life awaits! 🌿
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Form Input:** Allow users to submit their information to register for yoga classes.
+- **Payment Gateway Integration:** Securely process payments for yoga class reservations. It is temporarily serving for now.
+- **Thank-You Page:** Display a thank-you message to users after successful form submission and payment.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Client:** React, Html, CSS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Server:** Node, Express
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## API Reference
+Try out the working backend API by using Postman.
 
-## Learn More
+https://mindfullbliss.onrender.com/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### deployed using Render
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### /api/submitForm
 
-### Code Splitting
+Takes form data as a dictionary and validates the data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### /api/Thankyou
 
-### Analyzing the Bundle Size
+Validates the payment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+responds with a status code of 200 in case of correct execution result
 
-### Making a Progressive Web App
+responds with a status code of 400 in case of an error in the validation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Assumptions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### search_db : 
+This function is assumed to check the provided email against the actual email. 
 
-### Deployment
+### maximum_no_people :
+This function is assumed to check if the maximum number of people in a batch was reached or not. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### CompletePayment :
+This function is assumed to complete the payment made through the form.
